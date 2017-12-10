@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
 }
 
 .container {
-    margin: 0 ;
-    padding: 0;
     max-width: 1200px;
+    width: 100%;
     font-size: 28px;
     text-align: center;
     font-weight: 700px;
@@ -15,13 +16,24 @@
 
 
 div.img {
-    background-image: url('../assets/image/dawn.png');
+    background-image: url('../assets/image/sunny-day.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 590px;
     width: 100%; 
     
 }
+
+div.cat {
+    position: relative;
+    /* left: 20%; */
+    top:50%;
+}
+
+img.cat2 ,img.cat3{
+    display:none;
+}
+
 
 span.tablet,span.desktop{
     display:none;
@@ -32,9 +44,22 @@ span.tablet,span.desktop{
         background-image: url('../assets/image/night.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        height: 600px;
+        height: 590px;
         width: 100%; 
     }
+
+    img.cat1 ,img.cat3{
+        display:none;
+    }
+
+    img.cat2 {
+        display: block;
+    }
+     
+    div.cat {
+        left: 20%;
+    }
+    
     span.desktop,span.mobile{
         display:none;
     }
@@ -49,12 +74,20 @@ span.tablet,span.desktop{
 
 @media (min-width: 992px) {
     div.img {
-        background-image: url('../assets/image/sunny-day.jpg');
+        background-image: url('../assets/image/dawn.png');
         background-size: cover;
         background-repeat: no-repeat;
-        height: 600px;
+        height: 590px;
         width: 100%; 
     } 
+
+    img.cat1 ,img.cat2{
+        display:none;
+    }
+
+    img.cat3 {
+        display: block;
+    }
 
     span.tablet,span.mobile{
         display:none;
